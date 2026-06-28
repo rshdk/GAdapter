@@ -1,0 +1,34 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Error 500 {% endblock %}
+
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+<main class="grid min-h-full place-items-center bg-slate-50 dark:bg-dark-bg px-6 py-24 sm:py-32 lg:px-8">
+  <div class="text-center">
+    <div class="mx-auto flex h-20 w-20 items-center justify-center rounded-full bg-red-100 dark:bg-red-500/10 mb-6">
+      <i class="hgi-stroke hgi-server-04 text-4xl text-red-600 dark:text-red-400"></i>
+    </div>
+    <p class="text-base font-semibold text-red-600 dark:text-red-400">500</p>
+    <h1 class="mt-4 text-3xl font-bold tracking-tight text-slate-900 dark:text-white sm:text-5xl">Internal Server Error
+    </h1>
+    <div class="mt-6 p-4 rounded-xl bg-slate-900 border border-slate-800 text-left inline-block w-full max-w-sm">
+      <p class="font-mono text-sm text-red-400 mb-1">$ CRITICAL: Server malfunction</p>
+      <p class="font-mono text-sm text-slate-400 mb-1">$ Exception: InternalServerError</p>
+      <p class="font-mono text-sm text-slate-500">$ TraceID: X-{{ range(10000, 99999) | random }}</p>
+    </div>
+    <p class="mt-6 text-base leading-7 text-slate-600 dark:text-stone-400">The server encountered an internal error and
+      was unable to complete your request.<br>Our engineering team has been notified and is working on a fix.</p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+      <a href="/"
+        class="rounded-xl bg-brand-600 px-5 py-3 text-sm font-semibold text-white shadow-sm hover:bg-brand-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-600 transition-colors inline-flex items-center gap-2">
+        <i class="hgi-stroke hgi-arrow-left-01 text-lg"></i>
+        Return to Dashboard
+      </a>
+    </div>
+  </div>
+</main>
+{% endblock content %}
+
+{% block javascripts %}{% endblock javascripts %}
