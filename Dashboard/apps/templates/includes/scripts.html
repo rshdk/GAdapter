@@ -1,0 +1,75 @@
+<!-- Notyf -->
+<script src="{{ config.ASSETS_ROOT }}/vendor/notyf/notyf.min.js"></script>
+
+<script>
+// Tailwind UI Initialization Script
+document.addEventListener('DOMContentLoaded', () => {
+    // 1. Dark Mode Toggle Logic
+    const themeToggleBtn = document.querySelector('.theme-toggle-btn');
+    
+    // Check local storage or system preference on load
+    if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else {
+        document.documentElement.classList.add('dark');
+    }
+
+    if (themeToggleBtn) {
+        themeToggleBtn.addEventListener('click', function() {
+            // Toggle icons if they exist inside the button
+            const darkIcon = this.querySelector('.hgi-moon-02');
+            const lightIcon = this.querySelector('.hgi-sun-03');
+            
+            if (document.documentElement.classList.contains('dark')) {
+                document.documentElement.classList.remove('dark');
+                localStorage.setItem('color-theme', 'light');
+            } else {
+                document.documentElement.classList.add('dark');
+                localStorage.setItem('color-theme', 'dark');
+            }
+        });
+    }
+
+    // 2. Mobile Menu Toggle
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    if (mobileMenuToggle && sidebar) {
+        // Ensure sidebar has overflow-hidden for smooth width transitions
+        sidebar.classList.add('overflow-hidden');
+        mobileMenuToggle.addEventListener('click', () => {
+            if (sidebar.classList.contains('w-80')) {
+                sidebar.classList.remove('w-80');
+                sidebar.classList.add('w-0', 'border-none');
+            } else {
+                sidebar.classList.remove('w-0', 'border-none');
+                sidebar.classList.add('w-80');
+            }
+        });
+    }
+
+    // 3. Dropdown Toggles (Click based)
+    const dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
+    dropdownToggles.forEach(toggle => {
+        toggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const targetId = toggle.getAttribute('data-dropdown-toggle');
+            const targetMenu = document.getElementById(targetId);
+            if (targetMenu) {
+                targetMenu.classList.toggle('invisible');
+                targetMenu.classList.toggle('opacity-0');
+                targetMenu.classList.toggle('translate-y-2');
+            }
+        });
+    });
+
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        const dropdowns = document.querySelectorAll('.dropdown-menu');
+        dropdowns.forEach(menu => {
+            if (!menu.classList.contains('invisible')) {
+                menu.classList.add('invisible', 'opacity-0', 'translate-y-2');
+            }
+        });
+    });
+});
+</script>

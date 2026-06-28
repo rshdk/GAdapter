@@ -1,0 +1,101 @@
+<!-- Sidebar Navigation -->
+<aside id="sidebar"
+    class="z-10 flex w-80 shrink-0 flex-col justify-between bg-white transition-all duration-300 ease-in-out dark:border-r dark:border-transparent dark:bg-dark-bg">
+    <div class="p-6">
+        <!-- Logo area -->
+        <div class="mb-10 flex cursor-pointer items-center gap-3 px-2">
+            <img src="{{ config.ASSETS_ROOT }}/svg/logo.svg" alt="POAdapter Logo"
+                class="h-8 w-8 drop-shadow-sm transition-transform duration-300 hover:-translate-y-1" />
+            <span
+                class="sidebar-text text-2xl font-extrabold tracking-tight text-slate-800 transition-opacity duration-300 whitespace-nowrap overflow-hidden dark:text-stone-100">ADAPTER</span>
+        </div>
+
+        <!-- Nav Links -->
+        <div class="flex flex-col gap-8">
+            <div class="space-y-2">
+                <p
+                    class="sidebar-text mb-3 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400 transition-opacity duration-300 whitespace-nowrap overflow-hidden">
+                    Overview
+                </p>
+
+                <a href="/dashboard" class="sidebar-link {% if request.path == '/dashboard' %}active{% endif %}">
+                    <i class="hgi-stroke hgi-home-01 text-lg"></i>
+                    <span
+                        class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Dashboard</span>
+                </a>
+                <a href="/Tasks.html" class="sidebar-link {% if request.path == '/Tasks.html' %}active{% endif %}">
+                    <i class="hgi-stroke hgi-task-01 text-lg"></i>
+                    <span
+                        class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Tasks</span>
+                </a>
+                <a href="/AutoTasks.html"
+                    class="sidebar-link {% if request.path == '/AutoTasks.html' %}active{% endif %}">
+                    <i class="hgi-stroke hgi-settings-02 text-lg"></i>
+                    <span class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Auto
+                        Tasks</span>
+                </a>
+            </div>
+
+            <div class="space-y-2">
+                <p
+                    class="sidebar-text mb-3 px-3 text-xs font-semibold uppercase tracking-wider text-slate-400 transition-opacity duration-300 whitespace-nowrap overflow-hidden">
+                    System
+                </p>
+
+                {% if current_user.username == 'admin' %}
+                <a href="{{ url_for('authentication_blueprint.user_management') }}"
+                    class="sidebar-link {% if 'user_management' in request.path %}active{% endif %}">
+                    <i class="hgi-stroke hgi-user-multiple text-lg"></i>
+                    <span
+                        class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Management</span>
+                </a>
+                {% endif %}
+                <a href="/builder.html" class="sidebar-link {% if 'builder' in request.path %}active{% endif %}">
+                    <i class="hgi-stroke hgi-code text-lg"></i>
+                    <span
+                        class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Builder</span>
+                </a>
+                <a href="/help.html" class="sidebar-link {% if 'help' in request.path %}active{% endif %}">
+                    <i class="hgi-stroke hgi-book-open-01 text-lg"></i>
+                    <span class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Help &
+                        Docs</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sidebar footer -->
+    <div class="mt-auto p-6 pb-8">
+
+        <div class="relative cursor-pointer">
+            <div data-dropdown-toggle="profileDropdown"
+                class="-mx-3 flex items-center gap-3 rounded-xl border border-transparent p-3 transition-all hover:border-slate-100 hover:bg-slate-50 dark:hover:border-transparent dark:hover:bg-dark-card">
+                <div
+                    class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-brand-600 text-white font-bold text-lg border border-brand-700 shadow-sm">
+                    {{ current_user.username[0]|upper if current_user.username else 'A' }}
+                </div>
+                <div class="flex flex-1 flex-col">
+                    <span class="text-sm font-bold text-slate-700 dark:text-stone-200">{{ current_user.username
+                        }}</span>
+                    <span class="text-[13px] text-slate-400 dark:text-stone-500">System Admin</span>
+                </div>
+                <i class="hgi-stroke hgi-arrow-up-01 text-slate-400 dark:text-stone-500"></i>
+            </div>
+
+            <!-- Dropdown Menu -->
+            <div id="profileDropdown"
+                class="dropdown-menu invisible absolute bottom-full left-0 z-50 mb-2 w-full translate-y-2 transform overflow-hidden rounded-xl border border-slate-100 bg-white opacity-0 shadow-xl transition-all duration-200 dark:border-transparent dark:bg-dark-card">
+                <div class="space-y-1 p-2">
+
+                    <a href="{{ url_for('authentication_blueprint.logout') }}"
+                        class="flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-slate-600 transition-colors hover:bg-red-50 hover:text-red-600 dark:text-stone-400 dark:hover:bg-red-500/10 dark:hover:text-red-400">
+                        <i class="hgi-stroke hgi-logout-01 text-lg"></i>
+
+                        <span
+                            class="sidebar-text transition-opacity duration-300 whitespace-nowrap overflow-hidden">Logout</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</aside>

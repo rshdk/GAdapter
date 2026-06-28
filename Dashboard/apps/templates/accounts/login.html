@@ -1,0 +1,79 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Sign IN {% endblock %}
+
+{% block stylesheets %}
+<style type="text/tailwindcss">
+  @layer utilities {
+    .auth-bg {
+      background-image: radial-gradient(circle at top right, rgba(99, 102, 241, 0.15), transparent 40%),
+                        radial-gradient(circle at bottom left, rgba(168, 85, 247, 0.15), transparent 40%);
+    }
+  }
+</style>
+{% endblock stylesheets %}
+
+{% block content %}
+<div
+  class="auth-bg flex min-h-screen items-center justify-center bg-slate-50 p-4 font-sans text-slate-900 selection:bg-brand-100 selection:text-brand-900 dark:bg-dark-bg dark:text-stone-50 dark:selection:bg-brand-900/30 dark:selection:text-brand-100">
+  <div
+    class="w-full max-w-md overflow-hidden rounded-3xl bg-white shadow-xl shadow-brand-500/5 ring-1 ring-slate-100 dark:bg-dark-card dark:shadow-soft-dark dark:ring-stone-800">
+    <div class="p-8 sm:p-10">
+      <!-- Header -->
+      <div class="mb-8 text-center">
+        <div
+          class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-brand-50 text-brand-600 dark:bg-brand-500/10 dark:text-brand-400">
+          <img src="{{ config.ASSETS_ROOT }}/svg/logo.svg" alt="Logo" class="h-8 w-8 drop-shadow-sm" />
+        </div>
+        <h1 class="text-2xl font-bold tracking-tight text-slate-900 dark:text-white">Admin Panel</h1>
+        <p class="mt-2 text-sm text-slate-500 dark:text-stone-400">Sign in to continue to your dashboard</p>
+      </div>
+
+      <!-- Form -->
+      <form method="post" action="" class="space-y-6">
+        {{ form.hidden_tag() }}
+
+        <div class="space-y-4">
+          <!-- Username -->
+          <div>
+            <label for="username"
+              class="mb-2 block text-sm font-medium text-slate-700 dark:text-stone-300">Username</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <i class="hgi-stroke hgi-user text-lg text-slate-400 dark:text-stone-500"></i>
+              </div>
+              {{ form.username(class="block w-full rounded-xl border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm
+              text-slate-900 transition-colors focus:border-brand-500 focus:outline-none focus:ring-1
+              focus:ring-brand-500 placeholder:text-slate-400 dark:border-stone-700 dark:bg-dark-hover dark:text-white
+              dark:focus:border-brand-500", id="username", placeholder="Enter your username") }}
+            </div>
+          </div>
+
+          <!-- Password -->
+          <div>
+            <label for="password"
+              class="mb-2 block text-sm font-medium text-slate-700 dark:text-stone-300">Password</label>
+            <div class="relative">
+              <div class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
+                <i class="hgi-stroke hgi-lock-02 text-lg text-slate-400 dark:text-stone-500"></i>
+              </div>
+              {{ form.password(class="block w-full rounded-xl border border-slate-200 bg-white py-2.5 pl-10 pr-4 text-sm
+              text-slate-900 transition-colors focus:border-brand-500 focus:outline-none focus:ring-1
+              focus:ring-brand-500 placeholder:text-slate-400 dark:border-stone-700 dark:bg-dark-hover dark:text-white
+              dark:focus:border-brand-500", id="password", placeholder="Enter your password") }}
+            </div>
+          </div>
+        </div>
+
+
+        <!-- Submit Button -->
+        <button name="login" type="submit"
+          class="flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all hover:bg-brand-700 focus:outline-none focus:ring-2 focus:ring-brand-500 focus:ring-offset-2 active:scale-[0.98] dark:focus:ring-offset-dark-bg">
+          Sign in <i class="hgi-stroke hgi-arrow-right-01"></i>
+        </button>
+      </form>
+
+    </div>
+  </div>
+</div>
+{% endblock content %}

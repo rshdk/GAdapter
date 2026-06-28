@@ -1,0 +1,673 @@
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.1.9:3000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 124-654-398
+ - - [28/Jun/2026 09:00:45] "[31m[1mGET /dashboard HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:00:45] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:45] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:45] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:45] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:46] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:00:46] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:00:46] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:46] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:46] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:46] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:46] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:50] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:00:50] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:50] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:50] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:50] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:00:50] "[33mGET /static/assets/brand/light.svg HTTP/1.1[0m" 404 -
+ - - [28/Jun/2026 09:00:50] "[33mGET /static/assets/brand/light.svg HTTP/1.1[0m" 404 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:00:51] "GET /api/clients?_=1782617451027 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:01:46] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:01:55] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:01:55] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:01:55] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:01:55] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:01:55] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:01:55] "[33mGET /static/assets/brand/dark.svg HTTP/1.1[0m" 404 -
+ - - [28/Jun/2026 09:01:55] "[33mGET /static/assets/brand/dark.svg HTTP/1.1[0m" 404 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:01:55] "GET /api/clients?_=1782617515720 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:01:55] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:02:52] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:03:23] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:04:52] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:05:53] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:06:48] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:07:59] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:09:26] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:10:15] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:11:23] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:12:46] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:13:58] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:14:55] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:15:59] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:17:27] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:18:26] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:19:40] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:20:54] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:22:25] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:23:49] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:24:21] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:25:46] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:27:09] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:27:21] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:27:21] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:27:21] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:27:21] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:27:21] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:27:21] "[33mGET /static/assets/brand/dark.svg HTTP/1.1[0m" 404 -
+ - - [28/Jun/2026 09:27:21] "[33mGET /static/assets/brand/dark.svg HTTP/1.1[0m" 404 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:27:21] "GET /api/clients?_=1782619041358 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:27:21] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:05] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:13] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:13] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:13] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:13] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:13] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:13] "GET /static/assets/svg/dark.svg HTTP/1.1" 200 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:28:13] "GET /api/clients?_=1782619093350 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:13] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:15] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:28:15] "GET /api/clients?_=1782619095698 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:15] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:16] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:16] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:16] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:17] "GET /AutoTasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:17] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:17] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:17] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:17] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:17] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:17] "GET /api/auto_tasks?page=1&per_page=10 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:20] "GET /user_management HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:20] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:20] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:20] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:20] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:21] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:22] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:28:22] "GET /api/clients?_=1782619102782 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:22] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:26] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:26] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:26] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:28] "GET /AutoTasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:28] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:28] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:28] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:28] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:28] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:28] "GET /api/auto_tasks?page=1&per_page=10 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:30] "GET /user_management HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:30] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:30] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:30] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:30] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:30] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:31] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:31] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:31] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:31] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:31] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:31] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:33] "GET /help.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:33] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:33] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:33] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:33] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:33] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:35] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:28:35] "GET /api/clients?_=1782619115490 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:35] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:46] "[32mGET /logout HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:28:46] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:46] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:46] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:46] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:46] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:46] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:49] "[31m[1mGET /dashboard HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:49] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:49] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:49] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:49] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:50] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:28:53] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:53] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:53] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:53] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:53] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:55] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:55] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:55] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:55] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:55] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:56] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:56] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:56] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:56] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:56] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:57] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:57] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:57] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:57] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:57] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:58] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:28:58] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:58] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:58] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:28:58] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:29:26] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:29:59] "[31m[1mGET /help.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:29:59] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:29:59] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:29:59] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:29:59] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:05] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:30:07] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:30:07] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:30:07] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:07] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:07] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:07] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:07] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:10] "[31m[1mGET /dawda HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:30:10] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:10] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:10] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:10] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:15] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:30:15] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:30:15] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:15] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:15] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:15] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:15] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:30] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:30:30] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:30] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:30] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:30] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:30] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:34] "[31m[1mGET /logind HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 09:30:34] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:34] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:34] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:34] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:30:45] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:31:04] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:31:04] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:31:04] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:04] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:04] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:04] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:04] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:34] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:31:34] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:34] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:34] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:34] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:34] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:51] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/svg/dark.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:31:51] "GET /api/clients?_=1782619311515 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:31:51] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:32:16] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:32:58] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:07] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:33:07] "GET /api/clients?_=1782619387824 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:07] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:13] "[32mGET /logout HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 09:33:13] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:13] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:13] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:13] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:13] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:13] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:39] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient'}
+Client EnterpriseClient is active.
+Returning 1 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:33:39] "GET /api/clients?_=1782619419741 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:33:39] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:34:15] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:35:21] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:00] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:00] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:00] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:00] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:00] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:00] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+Deleted: C:\Users\ph4nt0m\AppData\Local\Temp\OrangeSolutionbmlptj_0
+ - - [28/Jun/2026 09:36:03] "POST /api/build-client HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:25] "GET /check?client_id=test1cppsssssssssssssssssss HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:28] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: {'EnterpriseClient', 'test1cppsssssssssssssssssss'}
+Client EnterpriseClient is active.
+Client test1cppsssssssssssssssssss is active.
+Returning 2 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 09:36:28] "GET /api/clients?_=1782619588383 HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:28] "[36mGET /static/assets/img/flags/republic-of-macedonia.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:31] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:36:31] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:31] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2026 09:36:37] "POST /api/send_command HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:37] "POST /api/send_command HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:37] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:37] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:50] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+127.0.0.1 - - [28/Jun/2026 09:36:56] "POST /api/send_command HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:56] "POST /api/send_command HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:56] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:36:56] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:37:23] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:05] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:21] "GET /check?client_id=test1cppsssssssssssssssssss HTTP/1.1" 200 -
+=== Processing /saveresult ===
+Client ID: test1cppsssssssssssssssssss
+Task ID: 1
+Result length: 2132
+Found task 1 for client test1cppsssssssssssssssssss. Current status: Pending
+Successfully updated task 1 to 'Completed'
+ - - [28/Jun/2026 09:38:22] "POST /saveresult HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:22] "GET /Get?path=ZmlsZXNcOGJiY2I5YjMtMTljZC00YzllLTgyOTgtY2ZlNmQ0OTNlN2ZkXGh3bW9uaXRvcl8xLjYzLmV4ZQ== HTTP/1.1" 200 -
+=== Processing /saveresult ===
+Client ID: test1cppsssssssssssssssssss
+Task ID: 2
+Result length: 7
+Found task 2 for client test1cppsssssssssssssssssss. Current status: Pending
+Successfully updated task 2 to 'Completed'
+ - - [28/Jun/2026 09:38:22] "POST /saveresult HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:43] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:43] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:38:43] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:38:44] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:38:44] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:38:44] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:38:44] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:44] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:38:50] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:39:23] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:39:51] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 09:39:51] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:39:51] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:39:51] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:39:51] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:39:51] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 09:40:07] "GET /check?client_id=EnterpriseClient HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.1.9:3000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 124-654-398
+ - - [28/Jun/2026 10:18:43] "[31m[1mGET /Tasks.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 10:18:43] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:43] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:43] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:43] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:46] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 10:18:46] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:46] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:46] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:46] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:46] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:46] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:51] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:51] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:51] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:51] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:51] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:51] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 10:18:51] "GET /api/clients?_=1782622131978 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:54] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:54] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:54] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:54] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:54] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:54] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:18:54] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:54] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:59] "POST /api/delete_tasks HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:59] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:18:59] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:03] "POST /api/delete_tasks HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:03] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:03] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:05] "GET /AutoTasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:05] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:05] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:05] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:05] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:05] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:05] "GET /api/auto_tasks?page=1&per_page=10 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:07] "GET /user_management HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:07] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:07] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:07] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:07] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:07] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:09] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:19:09] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:09] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:09] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:09] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:19:09] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.1.9:3000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 124-654-398
+ - - [28/Jun/2026 10:22:08] "[31m[1mGET /builder.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 10:22:08] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:08] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:08] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:09] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:10] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 10:22:10] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:10] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:10] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:10] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:10] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:10] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:14] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:14] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:14] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:14] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:14] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:14] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 10:22:14] "GET /api/clients?_=1782622334703 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:16] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:16] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:16] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:16] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:16] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:16] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:21] "[31m[1mGET /builder.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 10:22:38] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:38] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:38] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:38] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:38] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:38] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:22:43] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:43] "GET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:43] "GET /static/assets/css/theme.css HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:43] "GET /static/assets/js/tailwind-config.js HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:43] "GET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:44] "GET /static/assets/svg/logo.svg HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:44] "GET /static/assets/img/favicon/favicon-96x96.png HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:22:44] "GET /static/assets/img/favicon/apple-touch-icon.png HTTP/1.1" 200 -
+[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:3000
+ * Running on http://192.168.1.9:3000
+[33mPress CTRL+C to quit[0m
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 124-654-398
+ - - [28/Jun/2026 10:23:08] "[31m[1mGET /builder.html HTTP/1.1[0m" 403 -
+ - - [28/Jun/2026 10:23:08] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:08] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:08] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:08] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:09] "[32mGET / HTTP/1.1[0m" 302 -
+ - - [28/Jun/2026 10:23:09] "GET /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:23:09] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:09] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:09] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:09] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:09] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:13] "POST /login HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:23:13] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:13] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:13] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:13] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:13] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 10:23:13] "GET /api/clients?_=1782622393709 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:23:14] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:23:14] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:14] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:14] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:14] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:14] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:49] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:23:50] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:50] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:50] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:50] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:23:50] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+Deleted: C:\Users\ph4nt0m\AppData\Local\Temp\OrangeSolutioni43thmff
+ - - [28/Jun/2026 10:23:53] "POST /api/build-client HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:06] "GET /user_management HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:06] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:06] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:06] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:06] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:06] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "GET /AutoTasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:07] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:07] "GET /api/auto_tasks?page=1&per_page=10 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:08] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:08] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:08] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:08] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:08] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:08] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:08] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:08] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:09] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:09] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:09] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:09] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:09] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:09] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 10:24:09] "GET /api/clients?_=1782622449877 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:14] "GET /Tasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:14] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:14] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:14] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:14] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:14] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:14] "GET /api/tasks?page=1&per_page=10&search= HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:14] "GET /api/task_stats HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:15] "GET /AutoTasks.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:15] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:15] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:15] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:15] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:15] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:15] "GET /api/auto_tasks?page=1&per_page=10 HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:16] "GET /user_management HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:16] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:16] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:16] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:16] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:16] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:17] "GET /builder.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:17] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:17] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:17] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:17] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:17] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:18] "GET /help.html HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:18] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:18] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:18] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:18] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:19] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:23] "GET /dashboard HTTP/1.1" 200 -
+ - - [28/Jun/2026 10:24:23] "[36mGET /static/assets/vendor/notyf/notyf.min.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:23] "[36mGET /static/assets/css/theme.css HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:23] "[36mGET /static/assets/js/tailwind-config.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:23] "[36mGET /static/assets/vendor/notyf/notyf.min.js HTTP/1.1[0m" 304 -
+ - - [28/Jun/2026 10:24:23] "[36mGET /static/assets/svg/logo.svg HTTP/1.1[0m" 304 -
+--- /api/clients START ---
+User: admin, is_admin: True
+Admin user, including all clients from activity log.
+Allowed client IDs: set()
+Returning 0 active clients.
+--- /api/clients END ---
+ - - [28/Jun/2026 10:24:23] "GET /api/clients?_=1782622463288 HTTP/1.1" 200 -

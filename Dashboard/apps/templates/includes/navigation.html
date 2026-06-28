@@ -1,0 +1,46 @@
+<!-- Top Header -->
+<header
+  class="z-20 mx-3 mt-4 flex min-h-14 shrink-0 items-center justify-between rounded-2xl border border-slate-100 bg-white px-4 shadow-sm sm:mx-6 sm:mt-6 sm:min-h-16 sm:px-6 md:mx-10 dark:border-transparent dark:bg-dark-card">
+  <!-- Sidebar Toggle -->
+  <div class="flex items-center">
+    <button
+      class="mobile-menu-toggle rounded-lg text-slate-500 transition-colors hover:bg-slate-100 dark:text-stone-400 dark:hover:bg-dark-hover">
+      <i class="hgi-stroke hgi-menu-05 text-xl"></i>
+    </button>
+  </div>
+
+  <!-- Header Actions -->
+  <div class="flex items-center gap-5">
+
+    <div class="hidden h-6 w-px bg-slate-200 sm:block dark:bg-stone-700"></div>
+
+    <!-- Icons -->
+    <button
+      class="theme-toggle-btn cursor-pointer p-1 text-slate-500 transition-colors hover:text-slate-800 dark:text-stone-400 dark:hover:text-stone-200">
+      <i class="hgi-stroke hgi-moon-02 text-2xl dark:hidden"></i>
+      <i class="hgi-stroke hgi-sun-03 text-2xl hidden dark:block"></i>
+    </button>
+
+    <div class="group relative">
+      <button
+        class="relative cursor-pointer p-1 text-slate-500 transition-colors hover:text-slate-800 dark:text-stone-400 dark:hover:text-stone-200">
+        <span
+          class="absolute right-0 top-0 h-2 w-2 rounded-full border-2 border-white bg-red-500 dark:border-transparent"></span>
+        <i class="hgi-stroke hgi-notification-01 text-2xl"></i>
+      </button>
+      <!-- Dropdown Menu -->
+      <div
+        class="invisible absolute right-0 z-[100] mt-3 w-80 origin-top-right translate-y-2 transform rounded-2xl border border-slate-100 bg-white opacity-0 shadow-xl transition-all duration-200 group-hover:visible group-hover:translate-y-0 group-hover:opacity-100 dark:border-transparent dark:bg-dark-card">
+        <div class="flex items-center justify-between border-b border-slate-100 p-4 dark:border-transparent">
+          <h3 class="font-bold text-slate-800 dark:text-stone-200">Notifications</h3>
+          <button
+            class="text-xs font-semibold text-brand-600 hover:text-brand-700 dark:text-brand-400 dark:hover:text-brand-300">Mark
+            all as read</button>
+        </div>
+        <div class="max-h-80 overflow-y-auto">
+          <div class="p-4 text-sm text-center text-slate-500 dark:text-stone-400">No new notifications</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

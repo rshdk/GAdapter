@@ -1,0 +1,132 @@
+<!--
+
+=========================================================
+* Volt Free - Bootstrap 5 Dashboard
+=========================================================
+
+* Product Page: https://themesberg.com/product/admin-dashboard/volt-premium-bootstrap-5-dashboard
+* Copyright 2020 Themesberg (https://www.themesberg.com)
+* License (https://themesberg.com/licensing)
+
+* Designed and coded by https://themesberg.com
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. Please contact us to request a removal.
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Primary Meta Tags -->
+
+<title>
+    Dashboard - {% block title %}{% endblock %} 
+</title>
+
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="120x120" href="{{ config.ASSETS_ROOT }}/img/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="{{ config.ASSETS_ROOT }}/img/favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="{{ config.ASSETS_ROOT }}/img/favicon/favicon-96x96.png">
+<link rel="manifest" href="{{ config.ASSETS_ROOT }}/img/favicon/site.webmanifest">
+<link rel="mask-icon" href="{{ config.ASSETS_ROOT }}/img/favicon/safari-pinned-tab.svg" color="#ffffff">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<!-- Notyf -->
+<link type="text/css" href="{{ config.ASSETS_ROOT }}/vendor/notyf/notyf.min.css" rel="stylesheet">
+
+<!-- Hugeicons Free Icon Font -->
+<link rel="stylesheet" href="https://cdn.hugeicons.com/font/hgi-stroke-rounded.css" />
+
+<!-- Google Fonts: Figtree -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+
+<!-- Tailwind CSS (CDN Config & Engine) -->
+<link href="{{ config.ASSETS_ROOT }}/css/theme.css" rel="stylesheet" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="{{ config.ASSETS_ROOT }}/js/tailwind-config.js"></script>
+
+<script>
+    if (localStorage.getItem('color-theme') === 'light') {
+        document.documentElement.classList.remove('dark');
+    } else {
+        document.documentElement.classList.add('dark');
+    }
+</script>
+
+<style type="text/tailwindcss">
+@layer utilities {
+  .glass-panel {
+    @apply border border-white/40 bg-white/80 shadow-soft backdrop-blur-md dark:border-transparent dark:bg-dark-card/80;
+  }
+  .modal-hidden {
+    display: none !important;
+  }
+  .modal-visible {
+    display: flex !important;
+  }
+  .sidebar-link {
+    @apply flex cursor-pointer items-center gap-3 rounded-lg px-3 py-2.5 font-medium text-slate-600 transition-all duration-200 hover:bg-slate-100 hover:text-brand-600 dark:text-stone-400 dark:hover:bg-dark-hover dark:hover:text-brand-400;
+  }
+  .sidebar-link.active {
+    @apply bg-brand-50 font-semibold text-brand-600 dark:bg-brand-500/10 dark:text-brand-400;
+  }
+}
+</style>
+
+<!-- Specific Page CSS goes HERE -->    
+{% block stylesheets %}
+{% endblock stylesheets %}
+
+</head>
+<body class="min-h-screen w-full bg-slate-50 font-sans text-slate-900 selection:bg-brand-100 selection:text-brand-900 dark:bg-dark-bg dark:text-stone-50 dark:selection:bg-brand-900/30 dark:selection:text-brand-100">
+
+    {% block content %}{% endblock content %}
+
+    {% include 'includes/scripts.html' %}
+
+  <!-- Specific Page JS goes HERE  -->
+  {% block javascripts %}
+   
+     <script>
+        // Basic interactivity for error pages
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add hover effect to buttons
+            const buttons = document.querySelectorAll('.error-btn');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', () => {
+                    button.classList.add('transform', 'scale-105');
+                });
+                button.addEventListener('mouseleave', () => {
+                    button.classList.remove('transform', 'scale-105');
+                });
+            });
+            
+            // Add ripple effect to buttons
+            document.querySelectorAll('.error-btn').forEach(button => {
+                button.addEventListener('click', function(e) {
+                    const ripple = document.createElement('span');
+                    ripple.classList.add('ripple');
+                    ripple.style.left = e.offsetX + 'px';
+                    ripple.style.top = e.offsetY + 'px';
+                    this.appendChild(ripple);
+                    
+                    setTimeout(() => {
+                        ripple.remove();
+                    }, 600);
+                });
+            });
+        });
+    </script>
+    
+  
+  {% endblock javascripts %}  
+  
+</body>
+</html>
